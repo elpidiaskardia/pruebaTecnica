@@ -1,0 +1,16 @@
+<div class="navbar">
+    <div class="logo ">
+        <img src="assets/logo.png" alt="Logo TravelConnect">
+    </div>
+    
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" (click)="toggleCurrencyDropdown()">
+          $ ⇌ {{selectedCurrency}}
+        </button>
+        <div *ngIf="showCurrencyDropdown" class="dropdown-content" >
+          <div (click)="changeCurrency('USD')">USD</div>
+          <div (click)="changeCurrency('EUR')">EUR</div>
+          <div (click)="changeCurrency('COP')">COP</div>
+        </div>
+      </div>
+  </div> 

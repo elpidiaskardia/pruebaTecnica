@@ -1,0 +1,44 @@
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+  }
+  .logo img {
+    width: 100px; /* ajusta el ancho según tus necesidades */
+    height: auto; /* esto mantiene la proporción original de la imagen */
+    margin-right: 10px; /* espacio entre la imagen y el desplegable de moneda */
+  }
+  .currency-dropdown {
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #333;
+    position: relative;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .dropdown-content div {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content div:hover {
+    background-color: #ddd;
+  }
+ 

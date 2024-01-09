@@ -1,0 +1,12 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+.background-image-container {
+  background-image: url('assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.transparent-image {
+  opacity: 0.5; /* Ajusta el valor según tu necesidad, donde 0 es completamente transparente y 1 es completamente opaco */
+}

@@ -1,0 +1,26 @@
+<div *ngIf="journey" class="container bg-white">
+    <div class="row">
+        <h4>Journey information</h4>
+        <div class="col-md-4">
+            <p>Origin: {{journey.origin}}</p>
+        </div>
+        <div class="col-md-4">
+            <p>Destination: {{journey.destination}}</p>
+        </div>
+        <div class="col-md-3">
+            <p>Total Price: {{journey.price  | pipeCurrency}} </p>
+        </div>
+    </div>
+    <h5>Flights</h5>
+    <div class="row" *ngFor="let flight of journey.flights">
+        <div class="col-md-4">
+            <p>Origin: {{ flight.origin }}</p>
+        </div>
+        <div class="col-md-4">
+            <p>Destination: {{ flight.destination }}</p>
+        </div>
+        <div class="col-md-3">
+            <p>Price: {{ flight.price | pipeCurrency  }}</p>
+        </div>
+    </div>
+</div>
